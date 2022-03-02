@@ -5,23 +5,14 @@ public class MyFirstProgram {
 	hello("Andrei");
 
 	Square s = new Square(5);
-		System.out.println("Площадь квадрата = " + area(s));
+		System.out.println("Площадь квадрата = " + s.area());
 
 	Rectangle r = new Rectangle(5, 7);
-		System.out.println("Площадь прямоугольника = " + area(r));
+		System.out.println("Площадь прямоугольника = " + r.area());
 	}
 
 	public static void hello(String somewords){
 	System.out.println("Hello " + somewords + "!");
 	}
 
-	public static double area(Square s)
-	{
-		return s.l*s.l;
-}
-
-	public static double area(Rectangle r)
-		{
-			return r.a*r.b;
-		}
 }
