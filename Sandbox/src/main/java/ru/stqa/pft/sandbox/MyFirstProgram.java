@@ -4,23 +4,24 @@ public class MyFirstProgram {
 	public static void main (String[] args){
 	hello("Andrei");
 
-	double l = 5;
-		System.out.println("Площадь квадрата = " + area(l));
+	Square s = new Square(5);
+		System.out.println("Площадь квадрата = " + area(s));
 
-double c = 5;
-double a = 7;
-		System.out.println("Площадь прямоугольника + " + area(c, a));
+	Rectangle r = new Rectangle(5, 7);
+		System.out.println("Площадь прямоугольника = " + area(r));
 	}
-public static void hello(String somewords){
+
+	public static void hello(String somewords){
 	System.out.println("Hello " + somewords + "!");
-}
-public static double area(double l)
-{
-	return l*l;
+	}
+
+	public static double area(Square s)
+	{
+		return s.l*s.l;
 }
 
-	public static double area(double l, double a)
-	{
-		return l*a;
-	}
+	public static double area(Rectangle r)
+		{
+			return r.a*r.b;
+		}
 }
